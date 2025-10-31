@@ -23,6 +23,9 @@ class Ui_Form(object):
         if not Form.objectName():
             Form.setObjectName(u"Form")
         Form.resize(1471, 1164)
+        font = QFont()
+        font.setPointSize(18)
+        Form.setFont(font)
         self.scrollArea = QScrollArea(Form)
         self.scrollArea.setObjectName(u"scrollArea")
         self.scrollArea.setGeometry(QRect(0, 0, 1471, 1131))
@@ -34,32 +37,30 @@ class Ui_Form(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1452, 1548))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1452, 1695))
         self.verticalLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.label_17 = QLabel(self.scrollAreaWidgetContents)
         self.label_17.setObjectName(u"label_17")
-        font = QFont()
-        font.setPointSize(24)
-        self.label_17.setFont(font)
+        font1 = QFont()
+        font1.setPointSize(24)
+        self.label_17.setFont(font1)
         self.label_17.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout.addWidget(self.label_17)
 
         self.label_9 = QLabel(self.scrollAreaWidgetContents)
         self.label_9.setObjectName(u"label_9")
-        font1 = QFont()
-        font1.setPointSize(22)
-        self.label_9.setFont(font1)
+        font2 = QFont()
+        font2.setPointSize(22)
+        self.label_9.setFont(font2)
         self.label_9.setStyleSheet(u"color: blue;")
 
         self.verticalLayout.addWidget(self.label_9)
 
         self.label = QLabel(self.scrollAreaWidgetContents)
         self.label.setObjectName(u"label")
-        font2 = QFont()
-        font2.setPointSize(18)
-        self.label.setFont(font2)
+        self.label.setFont(font)
 
         self.verticalLayout.addWidget(self.label)
 
@@ -73,7 +74,7 @@ class Ui_Form(object):
 
         self.label_2 = QLabel(self.scrollAreaWidgetContents)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setFont(font2)
+        self.label_2.setFont(font)
 
         self.verticalLayout.addWidget(self.label_2)
 
@@ -85,7 +86,7 @@ class Ui_Form(object):
 
         self.label_3 = QLabel(self.scrollAreaWidgetContents)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setFont(font2)
+        self.label_3.setFont(font)
 
         self.verticalLayout.addWidget(self.label_3)
 
@@ -97,14 +98,14 @@ class Ui_Form(object):
 
         self.label_10 = QLabel(self.scrollAreaWidgetContents)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setFont(font1)
+        self.label_10.setFont(font2)
         self.label_10.setStyleSheet(u"color: blue;")
 
         self.verticalLayout.addWidget(self.label_10)
 
         self.label_4 = QLabel(self.scrollAreaWidgetContents)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setFont(font2)
+        self.label_4.setFont(font)
 
         self.verticalLayout.addWidget(self.label_4)
 
@@ -116,7 +117,7 @@ class Ui_Form(object):
 
         self.label_7 = QLabel(self.scrollAreaWidgetContents)
         self.label_7.setObjectName(u"label_7")
-        self.label_7.setFont(font2)
+        self.label_7.setFont(font)
 
         self.verticalLayout.addWidget(self.label_7)
 
@@ -128,7 +129,7 @@ class Ui_Form(object):
 
         self.label_8 = QLabel(self.scrollAreaWidgetContents)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setFont(font2)
+        self.label_8.setFont(font)
 
         self.verticalLayout.addWidget(self.label_8)
 
@@ -140,7 +141,7 @@ class Ui_Form(object):
 
         self.label_11 = QLabel(self.scrollAreaWidgetContents)
         self.label_11.setObjectName(u"label_11")
-        self.label_11.setFont(font1)
+        self.label_11.setFont(font2)
         self.label_11.setStyleSheet(u"color: blue;")
 
         self.verticalLayout.addWidget(self.label_11)
@@ -152,7 +153,7 @@ class Ui_Form(object):
 
         self.label_12 = QLabel(self.scrollAreaWidgetContents)
         self.label_12.setObjectName(u"label_12")
-        self.label_12.setFont(font2)
+        self.label_12.setFont(font)
 
         self.verticalLayout.addWidget(self.label_12)
 
@@ -164,7 +165,7 @@ class Ui_Form(object):
 
         self.label_13 = QLabel(self.scrollAreaWidgetContents)
         self.label_13.setObjectName(u"label_13")
-        self.label_13.setFont(font2)
+        self.label_13.setFont(font)
 
         self.verticalLayout.addWidget(self.label_13)
 
@@ -176,7 +177,7 @@ class Ui_Form(object):
 
         self.label_6 = QLabel(self.scrollAreaWidgetContents)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setFont(font2)
+        self.label_6.setFont(font)
 
         self.verticalLayout.addWidget(self.label_6)
 
@@ -186,9 +187,20 @@ class Ui_Form(object):
 
         self.verticalLayout.addWidget(self.textEdit_7)
 
+        self.label_18 = QLabel(self.scrollAreaWidgetContents)
+        self.label_18.setObjectName(u"label_18")
+
+        self.verticalLayout.addWidget(self.label_18)
+
+        self.textEdit_10 = QTextEdit(self.scrollAreaWidgetContents)
+        self.textEdit_10.setObjectName(u"textEdit_10")
+        self.textEdit_10.setFont(font3)
+
+        self.verticalLayout.addWidget(self.textEdit_10)
+
         self.label_16 = QLabel(self.scrollAreaWidgetContents)
         self.label_16.setObjectName(u"label_16")
-        self.label_16.setFont(font2)
+        self.label_16.setFont(font)
 
         self.verticalLayout.addWidget(self.label_16)
 
@@ -205,7 +217,7 @@ class Ui_Form(object):
 
         self.label_14 = QLabel(self.scrollAreaWidgetContents)
         self.label_14.setObjectName(u"label_14")
-        self.label_14.setFont(font2)
+        self.label_14.setFont(font)
 
         self.verticalLayout.addWidget(self.label_14)
 
@@ -312,6 +324,15 @@ class Ui_Form(object):
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
         self.label_6.setText(QCoreApplication.translate("Form", u"Beschreibung [In der Natur handelt es sich um ...]", None))
         self.textEdit_7.setHtml(QCoreApplication.translate("Form", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:20pt; font-weight:400; font-style:normal;\">\n"
+"<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+        self.label_18.setText(QCoreApplication.translate("Form", u"Widmung", None))
+        self.textEdit_10.setHtml(QCoreApplication.translate("Form", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "hr { height: 1px; border-width: 0; }\n"

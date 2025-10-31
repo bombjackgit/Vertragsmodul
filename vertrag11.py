@@ -51,6 +51,7 @@ class MainWindow(QWidget):
             "ez": self.ui.textEdit_5.toPlainText(),
             "kg": self.ui.textEdit_9.toPlainText(),
             "beschreibung": self.ui.textEdit_7.toPlainText(),
+            "widmung": self.ui.textEdit_10.toPlainText(),
             "übergabetag": self.ui.textEdit_13.toPlainText(),
         }
         kv.render(context)
