@@ -5,8 +5,6 @@ import sys
 from PySide6.QtWidgets import QApplication, QWidget
 from ui_mainwindow import Ui_Form
 
-kaufpreis = 562800
-
 # Deutsche Formatierung aktivieren
 locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
 
