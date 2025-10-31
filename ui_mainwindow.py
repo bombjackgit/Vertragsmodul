@@ -37,7 +37,7 @@ class Ui_Form(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 1452, 1695))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, -566, 1452, 1695))
         self.verticalLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.label_17 = QLabel(self.scrollAreaWidgetContents)
@@ -233,6 +233,11 @@ class Ui_Form(object):
         font4.setPointSize(18)
         font4.setBold(True)
         self.pushButton.setFont(font4)
+        self.pushButton.setStyleSheet(u"QPushButton:pressed {\n"
+"    background-color: green;\n"
+"    color: white;\n"
+"}\n"
+"")
 
         self.verticalLayout.addWidget(self.pushButton, 0, Qt.AlignmentFlag.AlignHCenter)
 

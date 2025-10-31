@@ -40,7 +40,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>-566</y>
       <width>1452</width>
       <height>1695</height>
      </rect>
@@ -494,6 +494,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
          <pointsize>18</pointsize>
          <bold>true</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:pressed {
+    background-color: green;
+    color: white;
+}
+</string>
        </property>
        <property name="text">
         <string>Entwürfe erstellen</string>
